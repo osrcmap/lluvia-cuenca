@@ -1,0 +1,57 @@
+{
+  "name": "@osrcmap/lluvia-cuenca",
+  "version": "0.1.0",
+  "description": "Lluvia acumulada y pronosticada sobre la cuenca alta de quebradas del Perú (piloto: Huaycoloro y Río Seco, con sensores del IGP). Cuencas delineadas con Copernicus DEM; lluvia de Open-Meteo. CLI agent-first.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Oscar Macchiavello (https://github.com/osrcmap)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osrcmap/lluvia-cuenca.git"
+  },
+  "homepage": "https://github.com/osrcmap/lluvia-cuenca#readme",
+  "bugs": "https://github.com/osrcmap/lluvia-cuenca/issues",
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "peru",
+    "lluvia",
+    "cuenca",
+    "huaico",
+    "open-meteo",
+    "copernicus-dem",
+    "cli",
+    "el-nino"
+  ],
+  "bin": {
+    "lluvia-cuenca": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "data",
+    "SKILL.md",
+    "LIMITATIONS.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "bun src/bin.ts",
+    "build": "bun build src/bin.ts --target=node --outfile dist/cli.js",
+    "test": "bun test",
+    "typecheck": "tsc --noEmit",
+    "lint": "biome check .",
+    "prepublishOnly": "bun run typecheck && bun test && bun run build && node scripts/humo.mjs"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.5.15",
+    "@turf/bbox": "^7.4.0",
+    "@turf/boolean-point-in-polygon": "^7.4.0",
+    "@turf/point-on-feature": "^7.4.0",
+    "@types/bun": "^1.4.3",
+    "picocolors": "^1.1.1",
+    "typescript": "^7.0.2",
+    "zod": "^4.6.7"
+  }
+}

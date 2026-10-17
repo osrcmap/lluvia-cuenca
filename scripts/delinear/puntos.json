@@ -1,0 +1,32 @@
+[
+  {
+    "id": "huaycoloro",
+    "nombre": "Quebrada Huaycoloro (hasta su llegada al Rímac)",
+    "lat": -12.020592,
+    "lon": -76.952288,
+    "referencia": "INGEMMET, peligro 'Quebrada HUAYCOloro' (flujo de detritos), San Juan de Lurigancho",
+    "referencia_area_km2": {
+      "valor": 492.9,
+      "fuente": "Tesis UNMSM sobre la subcuenca Huaycoloro (no verificada en otra fuente)"
+    },
+    "igp_estaciones": ["Huaycoloro1", "Huaycoloro2"],
+    "area_min_km2": 300,
+    "radio_m": 1500,
+    "area_max_km2": 1000,
+    "nota": "El punto del INGEMMET está en la confluencia, a 31 m del Rímac; el cauce principal de Huaycoloro (300-1000 km²) está a ~1.1 km.",
+    "igp_quebrada": "Huaycoloro"
+  },
+  {
+    "id": "rio-seco-jicamarca",
+    "nombre": "Quebrada Río Seco (Jicamarca, Lurigancho)",
+    "lat": -11.952092,
+    "lon": -76.874758,
+    "referencia": "INGEMMET, peligro 'Quebrada Silencio, Quebrada Colca, Quebrada Río Seco' (flujo de detritos), Lurigancho",
+    "igp_estaciones": ["Rioseco1", "Rioseco2"],
+    "area_min_km2": 50,
+    "radio_m": 500,
+    "area_max_km2": 300,
+    "nota": "Afluente identificado por cercanía al punto del INGEMMET y a las estaciones del IGP (Jicamarca). Confirmar con el IGP.",
+    "igp_quebrada": "Rio Seco"
+  }
+]

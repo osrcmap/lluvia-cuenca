@@ -1,0 +1,5 @@
+# pysheds 0.5 usa np.in1d, eliminado en NumPy 2.4
+pysheds==0.5
+rasterio==1.4.4
+shapely==2.2.0
+numpy==2.2.6

@@ -1,0 +1,12 @@
+version: 2
+updates:
+  # Mantiene al día las acciones fijadas por SHA (avisos como el fin de Node 20 en runners).
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+  - package-ecosystem: bun
+    directory: /
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
